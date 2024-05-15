@@ -1,5 +1,5 @@
-function Animate(){
-    //move from initial to final position
+function AnimatePage1(){
+//move from initial to final position
 gsap.to("#box1",{
     x:1000,
     duration:5,
@@ -8,7 +8,6 @@ gsap.to("#box1",{
     backgroundColor:"#DC143C",
     borderRadius:"50%",
     scale:0.4,
-    // stagger:0.3,
     repeat:-1,
     yoyo:true,
     
@@ -31,7 +30,6 @@ gsap.from("#box2",{
 gsap.from("h3",{
     duration:1,
     delay:1,
-    // color:"red",
     opacity:0,
     stagger:-1,
 })
@@ -56,10 +54,35 @@ gsap.to("#box4",{
     backgroundColor:"#DC143C",
     borderRadius:"50%",
     scale:0.4,
-    // stagger:0.3,
     repeat:-1,
     yoyo:true, //returns back in same direction   
 })
 }
 
-Animate();
+function AnimatePage2(){
+    const timeline = gsap.timeline();
+
+    timeline.from("nav a h2",{
+        opacity:0,
+        duration:0.3,
+        delay:0.5,
+        y:-20,
+    })
+
+    timeline.from("h4",{
+        opacity:0,
+        duration:1,
+        y:-20,
+        stagger:0.3,
+    })
+
+    timeline.from(".timeline",{
+        opacity:0,
+        scale:0,
+        duration:0.7,
+        delay:0.1,
+    })
+}
+
+AnimatePage1();
+AnimatePage2();
