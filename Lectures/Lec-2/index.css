@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: gilroy;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+.page1{
+  width: 100%;
+  height: 100%;
+  background-color: #002379;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page2{
+  width: 100%;
+  height: 100%;
+  background-color: #8576FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page3{
+  width: 100%;
+  height: 100%;
+  background-color: #7BC9FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box{
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
+}
