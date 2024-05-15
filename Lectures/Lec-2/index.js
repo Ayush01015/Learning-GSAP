@@ -21,10 +21,13 @@ gsap.from(".page2 #box",{
     delay:0.4,
     rotate:360,
     // scrollTrigger:".page2 #box" //basic
-    scrollTrigger:{ //advance features
+    scrollTrigger:{ 
+        //advance features
         trigger:".page2 #box",
         scroller:"body",
-        markers:true,
-        start:"top 60%", //moving markers
+        markers:true, //triggering animation at these points
+        start:"top 80%", //moving markers
+        end:"top 30%",
+        scrub:2, //animate start/end as you scroll up/down, can use true or [1-5] range numeric values init.
     },
 })
