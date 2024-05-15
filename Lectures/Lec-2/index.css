@@ -36,15 +36,11 @@ body{
   width: 100%;
   height: 100%;
   background-color: #7BC9FF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .page3 h1{
   font-size: 40vw;
   color: black;
-  margin-left: 150rem;
   text-transform: uppercase;
   pointer-events: none;
 }
@@ -54,8 +50,8 @@ body{
   height: 100%;
   background-color: #FFD0EC;
   display: flex;
-  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .page5{
@@ -71,13 +67,18 @@ body{
   width: 200px;
   height: 200px;
   background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
 
 .boxx{
-  min-width: 350px;
+  min-width: 400px;
   height: 350px;
   background-color: red;
   border: 1px solid black;
   margin: 0 1rem;
   border-radius: 15px;
+  
 }

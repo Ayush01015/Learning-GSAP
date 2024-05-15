@@ -33,7 +33,7 @@ gsap.from(".page2 #box",{
 })
 
 gsap.to(".page3 h1",{
-    transform:"translateX(-102%)",
+    transform:"translateX(-250%)",
     scrollTrigger:{
         trigger:".page3",
         scroller:"body",
@@ -46,14 +46,14 @@ gsap.to(".page3 h1",{
 })
 
 gsap.to(".page4 .boxx",{
-    transform:"translateX(-150%)",
+    transform:"translateX(-1000%)",
     scrollTrigger:{
-        trigger:".page4",
+        trigger:".page4", //trigger parent when we are using pin
         scroller:"body",
         markers:true,
         start:"top 0%",
-        end:"top -150%",    
-        scrub:2,
+        end:"top -95%",    
+        scrub:5,
         pin:true,
     }
 })
