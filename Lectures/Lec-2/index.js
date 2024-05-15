@@ -25,9 +25,35 @@ gsap.from(".page2 #box",{
         //advance features
         trigger:".page2 #box",
         scroller:"body",
-        markers:true, //triggering animation at these points
+      //markers:true, //triggering animation at these points
         start:"top 80%", //moving markers
         end:"top 30%",
         scrub:2, //animate start/end as you scroll up/down, can use true or [1-5] range numeric values init.
     },
+})
+
+gsap.to(".page3 h1",{
+    transform:"translateX(-102%)",
+    scrollTrigger:{
+        trigger:".page3",
+        scroller:"body",
+        markers:true,
+        start:"top 0%",
+        end:"top -100%",    
+        scrub:2,
+        pin:true,
+    }
+})
+
+gsap.to(".page4 .boxx",{
+    transform:"translateX(-150%)",
+    scrollTrigger:{
+        trigger:".page4",
+        scroller:"body",
+        markers:true,
+        start:"top 0%",
+        end:"top -150%",    
+        scrub:2,
+        pin:true,
+    }
 })

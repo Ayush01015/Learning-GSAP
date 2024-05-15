@@ -13,6 +13,9 @@ body {
   background-color: #111;
 }
 
+body{
+  overflow-x: hidden;
+}
 .page1{
   width: 100%;
   height: 100%;
@@ -38,8 +41,43 @@ body {
   align-items: center;
 }
 
+.page3 h1{
+  font-size: 40vw;
+  color: black;
+  margin-left: 150rem;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.page4{
+  width: 100%;
+  height: 100%;
+  background-color: #FFD0EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page5{
+  width: 100%;
+  height: 100%;
+  background-color: #F2F597;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #box{
   width: 200px;
   height: 200px;
   background-color: crimson;
+}
+
+.boxx{
+  min-width: 350px;
+  height: 350px;
+  background-color: red;
+  border: 1px solid black;
+  margin: 0 1rem;
+  border-radius: 15px;
 }
